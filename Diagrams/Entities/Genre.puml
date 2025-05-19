@@ -1,0 +1,55 @@
+﻿//@GeneratedCode
+@startuml SEMusicStore.Logic.Entities.Genre
++class Genre #whitesmoke {
+    - String _name
+    - List<Artist> _artists
+    ---
+     + String getName()
+     + setName(String value)
+     + List<Artist> getArtists()
+     + setArtists(List<Artist> value)
+    ---
+    + String get_Name()
+    + Void set_Name(String value)
+    + List<Artist> get_Artists()
+    + Void set_Artists(List`1 value)
+    + Void Validate(IContext context, EntityState entityState)
+}
++abstract class EntityObject #white {
+    - Int32 _id
+    ---
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+}
++abstract class DbObject #white {
+}
+interface IGenre #lightgrey {
+     + String getName()
+     + setName(String value)
+    ---
+    + String get_Name()
+    + Void set_Name(String value)
+    + Void CopyProperties(IGenre other)
+}
+interface IValidatableEntity #lightgrey {
+    + Void Validate(IContext context, EntityState entityState)
+}
+interface IIdentifiable #lightgrey {
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+    + Void CopyProperties(IIdentifiable other)
+}
+EntityObject <|-- Genre
+DbObject <|-- EntityObject
+IIdentifiable <|.. IGenre
+IGenre ()- Genre
+IValidatableEntity ()- Genre
+IIdentifiable ()- EntityObject
+Genre "*" o-- "0..1" Artist
+@enduml

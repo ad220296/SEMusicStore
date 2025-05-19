@@ -1,0 +1,13 @@
+# VS-Projektdateien
+.vs/
+*.user
+*.suo
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db

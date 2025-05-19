@@ -1,0 +1,40 @@
+<div class="container mt-4">
+  <h2>Genre-Liste</h2>
+
+  <div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+
+    <a [routerLink]="['/dashboard']" class="btn btn-outline-secondary">
+      ⬅ Zurück zum Dashboard
+    </a>
+  </div>
+
+  <a [routerLink]="['/genres/edit', 'new']" class="btn btn-success my-3">
+    Neues Genre anlegen
+  </a>
+
+  <table class="table table-striped genre-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Aktionen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let genre of genres">
+        <td>{{ genre.id }}</td>
+        <td>{{ genre.name }}</td>
+        <td>
+          <a [routerLink]="['/genres/edit', genre.id]" class="btn btn-sm btn-outline-primary">
+            Bearbeiten
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a [routerLink]="['/dashboard']" class="btn btn-outline-secondary mb-5">
+  ⬅ Zurück zum Dashboard
+  </a>
+  </div>
+</div>

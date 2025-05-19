@@ -1,0 +1,573 @@
+[
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAsync",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostAsync",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PutAsync",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PatchAsync",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patchModel",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CountAsync",
+    "RelativePath": "api/Artists/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Artist, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IArtist, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "QueryAsync",
+    "RelativePath": "api/Artists/query",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "queryParams",
+        "Type": "SEMusicStore.WebApi.Models.QueryParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SEMusicStore.WebApi.Models.Artist, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAsync",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PostAsync",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PutAsync",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "PatchAsync",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patchModel",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SEMusicStore.WebApi.Models.Genre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "CountAsync",
+    "RelativePath": "api/Genres/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.GenericEntityController\u00603[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Logic.Entities.Genre, SEMusicStore.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[SEMusicStore.Common.Contracts.IGenre, SEMusicStore.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "QueryAsync",
+    "RelativePath": "api/Genres/query",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "queryParams",
+        "Type": "SEMusicStore.WebApi.Models.QueryParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SEMusicStore.WebApi.Models.Genre, SEMusicStore.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SEMusicStore.WebApi.Controllers.SystemController",
+    "Method": "Post",
+    "RelativePath": "api/System",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SEMusicStore.WebApi.Models.UserData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  }
+]

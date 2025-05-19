@@ -1,0 +1,14 @@
+C:\Users\kernc\AppData\Local\Temp\SEMusicStore\SEMusicStore.Logic.deps.json
+C:\Users\kernc\AppData\Local\Temp\SEMusicStore\SEMusicStore.Logic.dll
+C:\Users\kernc\AppData\Local\Temp\SEMusicStore\SEMusicStore.Logic.pdb
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.csproj.AssemblyReference.cache
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.AssemblyInfoInputs.cache
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.AssemblyInfo.cs
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.csproj.CoreCompileInputs.cache
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.sourcelink.json
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicS.9991B1C0.Up2Date
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.dll
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\refint\SEMusicStore.Logic.dll
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\SEMusicStore.Logic.pdb
+C:\Users\kernc\Desktop\HTL\6. Semester\Csharp\Schulübungen\Development\SEMusicStore\SEMusicStore.Logic\obj\Release\net8.0\ref\SEMusicStore.Logic.dll

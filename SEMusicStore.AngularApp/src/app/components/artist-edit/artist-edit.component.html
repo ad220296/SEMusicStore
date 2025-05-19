@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2 *ngIf="artistId === null">Neuer Artist</h2>
+  <h2 *ngIf="artistId !== null">Artist bearbeiten (ID: {{ artistId }})</h2>
+
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input id="name" class="form-control" [(ngModel)]="artistName" name="name" />
+    </div>
+
+    <div class="mb-3">
+  <label for="genre" class="form-label">Genre</label>
+  <select id="genre" class="form-select" [(ngModel)]="selectedGenreId" name="genre">
+    <option [ngValue]="null" disabled selected>Bitte wählen...</option>
+    <option *ngFor="let genre of genres" [ngValue]="genre.id">
+      {{ genre.name }}
+    </option>
+  </select>
+</div>
+
+    <div class="mt-4">
+  <button class="btn btn-success me-2" (click)="save()">Speichern</button>
+  <a [routerLink]="['/artists']" class="btn btn-secondary">Zurück zur Liste</a>
+  </div>
+
+  </form>
+</div>

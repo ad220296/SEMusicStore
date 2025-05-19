@@ -1,0 +1,16 @@
+﻿.dashboard-wrapper {
+  min-height: 60vh;
+  padding-top: 3rem;
+}
+
+.btn-group .btn {
+  min-width: 200px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-group .btn:hover {
+  transform: translateY(-2px);
+}

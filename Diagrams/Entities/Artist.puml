@@ -1,0 +1,64 @@
+﻿//@GeneratedCode
+@startuml SEMusicStore.Logic.Entities.Artist
++class Artist #whitesmoke {
+    - String _name
+    - Int32 _genreId
+    - Genre _genre
+    ---
+     + String getName()
+     + setName(String value)
+     + Int32 getGenreId()
+     + setGenreId(Int32 value)
+     + Genre getGenre()
+     + setGenre(Genre value)
+    ---
+    + String get_Name()
+    + Void set_Name(String value)
+    + Int32 get_GenreId()
+    + Void set_GenreId(Int32 value)
+    + Genre get_Genre()
+    + Void set_Genre(Genre value)
+    + Void Validate(IContext context, EntityState entityState)
+}
++abstract class EntityObject #white {
+    - Int32 _id
+    ---
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+}
++abstract class DbObject #white {
+}
+interface IArtist #lightgrey {
+     + String getName()
+     + setName(String value)
+     + Int32 getGenreId()
+     + setGenreId(Int32 value)
+    ---
+    + String get_Name()
+    + Void set_Name(String value)
+    + Int32 get_GenreId()
+    + Void set_GenreId(Int32 value)
+    + Void CopyProperties(IArtist other)
+}
+interface IValidatableEntity #lightgrey {
+    + Void Validate(IContext context, EntityState entityState)
+}
+interface IIdentifiable #lightgrey {
+     + Int32 getId()
+     + setId(Int32 value)
+    ---
+    + Int32 get_Id()
+    + Void set_Id(Int32 value)
+    + Void CopyProperties(IIdentifiable other)
+}
+EntityObject <|-- Artist
+DbObject <|-- EntityObject
+IIdentifiable <|.. IArtist
+IArtist ()- Artist
+IValidatableEntity ()- Artist
+IIdentifiable ()- EntityObject
+Artist --> "0..1" Genre
+@enduml
